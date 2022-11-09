@@ -14,6 +14,8 @@ describe(suitNameReplaces, function () {
 
         console.log("---" + suitNameReplaces + "---" + case1 + "---");
 
+        $("#say").click();
+
         let demoContainer = demo.html();
         console.log("The content of the demo tag: " +  demoContainer);
 

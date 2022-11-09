@@ -1,11 +1,20 @@
+<input id="say" type="submit" value="Say Hello">
 <p id="demo"></p>
 <script>
 
-    window.sayHello = function ( name ){
+    $(function(){
 
-        return "Hello World " + name.toUpperCase() + " !!";
-    };
+        window.sayHello = function ( name ){
 
-    document.getElementById("demo").innerHTML = sayHello("John");
+            return "Hello World " + name.toUpperCase() + " !!";
+        };
+
+        $( "#say" ).click(function() {
+
+            document.getElementById("demo").innerHTML = sayHello("John");
+
+        });
+
+    });
 
 </script>

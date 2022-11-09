@@ -1,2 +1,30 @@
 
+
+<input id="views" type="submit" value="View Comments">
+<br>
+<br>
 <div id="comments">Be the first to add a comment....</div>
+
+<script>
+    $(function(){
+
+        let options;
+        let dataComments = [];
+
+        let initComments = {
+            message :"Great Job !!",
+            name : "Tom Smith"
+        }
+
+        dataComments.push(initComments);
+
+        options = {
+            data: dataComments
+        };
+
+        $( "#views" ).click(function() {
+            $('#comments').jQComments(options);
+        });
+
+    });
+</script>
